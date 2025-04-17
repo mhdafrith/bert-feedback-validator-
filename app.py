@@ -18,7 +18,7 @@ label_map = {0: "❌ Not Aligned", 1: "✅ Aligned"}
 # Load or define your seeds here
 import pandas as pd
 
-df = pd.read_excel("/content/drive/MyDrive/evaluation.xlsx")
+df = pd.read_excel("evaluation.xlsx")
 reason_choices = df['reason'].dropna().astype(str).tolist()
 
 
